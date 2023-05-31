@@ -1,13 +1,10 @@
-# This is a basic workflow to help you get started with Actions
-
-name: github action demo
-run-name: testing out github actions
-on:
-  push:
+name: github action demo run-name: testing out github actions
+on: 
+push:
 jobs:
 Basic-workflow:
-    runs-on: ubuntu-latest
-    steps:
-        -run: echo " Job is executing as part of Basic workflow"
+runs-on: ubuntu-latest 
+steps:
+run: echo " Job is executing as part of Basic workflow"
 
 
