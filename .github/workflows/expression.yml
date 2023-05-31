@@ -1,16 +1,16 @@
 name: github actions demo
 run-name: testing out github actions
 on:
-   push:
-      branches:
-       -master
-       -'releases/**'
-   pull_request:
-      branches:
-       -master
-       -'releases/**'
- jobs:
-    Basic-workflow:
-       runs-on: ubuntu-latest
-       steps:
-          -run: echo "job is executing part of initial workflow"
+  push:
+    branches:
+      - master
+      - 'releases/**'
+  pull_request:
+    branches:
+      - master
+      - 'releases/**'
+jobs:
+  Basic-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "job is executing part of initial workflow"
