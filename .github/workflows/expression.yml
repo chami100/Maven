@@ -3,12 +3,12 @@ run-name: testing out github actions
 on:
    push:
       branches:
-      -master
-      -'releases/**'
+        -master
+        -'releases/**'
    pull_request:
       branches:
-      -master
-      -'releases/**'
+        -master
+        -'releases/**'
  jobs:
     Basic-workflow:
        runs-on: ubuntu-latest
